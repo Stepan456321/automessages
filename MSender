@@ -1,0 +1,7 @@
+public class MSender {
+    public static void sendMessageToAllPlayers(String message) {
+        for (Player player : Bukkit.getOnlinePlayers()) {
+            player.sendMessage(message);
+        }
+    }
+}
